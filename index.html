@@ -5,17 +5,23 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<script type="text/javascript" src="vendor/jquery-1.8.1.min.js"></script>
 		<script type="text/javascript" src="vendor/three.min.js"></script>
-		<script type="text/javascript" src="js/test.js"></script>
+		<script type="text/javascript" src="js/webglfun.js"></script>
 		<script type="text/javascript">
 	    	if (!console) 
 	    		console = { log: function() {} };
 	    	
 	    	$(function(){
 	    		COM.KIORROS.webglfun.init($("#renderTarget"));
+	    		$("#toggleButton").click(function(){
+	    			COM.KIORROS.webglfun.toggleRunning();
+	    		})
 	    	});
 		</script>
 	</head>
 	<body>
 		<div id="renderTarget"></div>
+		<div id="inputPanel">
+			<input id="toggleButton" type="button" value="Toggle"/>
+		</div>
 	</body>
 </html>

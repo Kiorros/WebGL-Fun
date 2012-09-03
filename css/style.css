@@ -1,6 +1,11 @@
 #renderTarget {
-	width: 400px;
-	height: 300px;
+	width: 800px;
+	height: 600px;
 	border: 1px solid #000000;
+	margin: auto;
+}
+
+#inputPanel {
+	width: 800px;
 	margin: auto;
 }
